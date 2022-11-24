@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 7.2.0.final using JasperReports Library version 6.6.0  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="clientesv" pageWidth="612" pageHeight="792" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="f18f27b1-1a2f-4434-84e2-6278bfb50b2f">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="vekka"/>
+	<property name="com.jaspersoft.studio.data.sql.tables" value=""/>
+	<queryString>
+		<![CDATA[SELECT * FROM clientes ORDER BY codigoc]]>
+	</queryString>
+	<field name="codigoc" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="codigoc"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="clientes"/>
+	</field>
+	<field name="nombrec" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="nombrec"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="clientes"/>
+	</field>
+	<field name="rfc" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="rfc"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="clientes"/>
+	</field>
+	<field name="telefono" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="telefono"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="clientes"/>
+	</field>
+	<field name="direccion" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="direccion"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="clientes"/>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="62" splitType="Stretch">
+			<staticText>
+				<reportElement x="110" y="20" width="340" height="30" uuid="5ca41268-438c-4d4d-a571-bfba46b70652"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="19"/>
+				</textElement>
+				<text><![CDATA[Tienda de Artículos VEKKA]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="60" splitType="Stretch">
+			<staticText>
+				<reportElement x="230" y="9" width="100" height="30" uuid="f244ccd8-ee4b-4dc7-a5c1-cea94a10a411"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="13"/>
+				</textElement>
+				<text><![CDATA[Lista de Clientes]]></text>
+			</staticText>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="36" splitType="Stretch">
+			<staticText>
+				<reportElement x="40" y="0" width="60" height="20" uuid="01262650-4d0c-4c9c-81b5-5a577f209817">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="d46bfbac-0284-41f0-bfd2-cebcdfc86b4d"/>
+				</reportElement>
+				<text><![CDATA[Código]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="120" y="0" width="80" height="20" uuid="8918903c-86e6-46a7-af79-cb8042e77ffd">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="ec35f30d-8a75-4cfe-ada3-ffd87a9d281b"/>
+				</reportElement>
+				<text><![CDATA[Nombre]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="220" y="0" width="80" height="20" uuid="d8844b36-8514-4534-aaf5-1b73a05c52e6">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="7b9c6328-4550-4e7f-8d9f-e4cec4a474c2"/>
+				</reportElement>
+				<text><![CDATA[RFC]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="320" y="0" width="80" height="20" uuid="3ad5bc4c-36db-4d9d-8842-722ff07929a0">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="105a55a7-20a6-4579-8a8d-c6d97ff0bb10"/>
+				</reportElement>
+				<text><![CDATA[Teléfono]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="420" y="0" width="80" height="20" uuid="f8b1e3f0-97c2-4c7f-a6ee-3e014935c12a">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="46f03bd1-7e2b-40ac-9de1-fe49e12b419e"/>
+				</reportElement>
+				<text><![CDATA[Dirección]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="44" splitType="Stretch">
+			<textField>
+				<reportElement x="40" y="10" width="60" height="20" uuid="3aa2cb95-e4ff-4d48-aef7-1e3c602b96b4">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="d46bfbac-0284-41f0-bfd2-cebcdfc86b4d"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{codigoc}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="120" y="10" width="80" height="20" uuid="f8050434-1b91-404d-9e42-d72ea80a912b">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="ec35f30d-8a75-4cfe-ada3-ffd87a9d281b"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{nombrec}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="220" y="10" width="80" height="20" uuid="c94b4355-d8c6-47b0-8b22-0251d1e84b7e">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="7b9c6328-4550-4e7f-8d9f-e4cec4a474c2"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{rfc}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="320" y="10" width="80" height="20" uuid="9b0c7c42-1ae2-4f19-b79a-3ac751d92d41">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="105a55a7-20a6-4579-8a8d-c6d97ff0bb10"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{telefono}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="420" y="10" width="140" height="20" uuid="579f251e-8ba2-4a6e-acdf-805419d2234c">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="46f03bd1-7e2b-40ac-9de1-fe49e12b419e"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{direccion}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>
